@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@lazy-i18n/core": ["libs/core/src/index.ts"],
+      "@lazy-i18n/tab1": ["libs/tab1/src/index.ts"],
+      "@lazy-i18n/tab2": ["libs/tab2/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

@@ -1,0 +1,8 @@
+<ng-container *ngIf="{ core: i18nCore$ | async, tab2: i18nTab2$ | async } as i18n">
+  <p>{{ i18n.core?.helloFrom }} "Tab 2"</p>
+  <p>
+    {{ i18n.tab2?.changeLanguageOnTab1 }}
+    <br/>
+    {{ i18n.tab2?.getBackHereRequest }}
+  </p>
+</ng-container>

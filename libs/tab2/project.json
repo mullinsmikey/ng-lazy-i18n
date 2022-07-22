@@ -1,0 +1,22 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/tab2/src",
+  "prefix": "lazy-i18n",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/tab2"],
+      "options": {
+        "jestConfig": "libs/tab2/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/tab2/**/*.ts", "libs/tab2/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

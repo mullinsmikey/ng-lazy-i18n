@@ -1,0 +1,12 @@
+<ng-container *ngIf="{ core: i18nCore$ | async, tab1: i18nTab1$ | async } as i18n">
+  <p>{{ i18n.core?.helloFrom }} "Tab 1"</p>
+  <div>
+    <label for="language">{{ i18n.core?.language }}:</label>
+    <br/>
+    <select id="language" [formControl]="languageFC">
+      <option value="en">English</option>
+      <option value="de">German</option>
+    </select>
+  </div>
+  <p>{{ i18n.tab1?.country }}: n/a</p>
+</ng-container>
